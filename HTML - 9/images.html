@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #414141;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://images.pexels.com/photos/22858523/pexels-photo-22858523/free-photo-of-s-curve-chicago.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      width="400px"
+      alt="no image"
+    />
+
+    <img src="./html-course.png" width="400px" alt="no image" />
+
+    <picture>
+      <source media="(min-width: 650px)" srcset="./html-course.png" />
+      <source media="(min-width: 450px)" srcset="./html-course2.png" />
+      <img src="./html-course.png" alt="" />
+    </picture>
+
+    <!-- an image map generator -->
+
+    <img src="html-course.png" usemap="#image-map" />
+
+    <map name="image-map">
+      <area
+        onclick="one()"
+        target=""
+        alt=""
+        title=""
+        href=""
+        coords="490,95,684,308"
+        shape="rect"
+      />
+      <area
+        onclick="two()"
+        target=""
+        alt=""
+        title=""
+        href=""
+        coords="116,43,298,84"
+        shape="rect"
+      />
+    </map>
+
+    <!-- js -->
+    <script>
+      function one() {
+        alert("You clicked on one");
+      }
+      function two() {
+        alert("You clicked on two");
+      }
+    </script>
+  </body>
+</html>
